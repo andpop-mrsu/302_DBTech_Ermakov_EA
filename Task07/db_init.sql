@@ -22,7 +22,7 @@ CREATE TABLE groups (
   field_id INTEGER NOT NULL,
   group_number INTEGER NOT NULL,
   entry_year INTEGER NOT NULL,
-  FOREIGN KEY (field_id) REFERENCES fields(id) ON DELETE RESTRICT.
+  FOREIGN KEY (field_id) REFERENCES fields(id) ON DELETE RESTRICT,
   UNIQUE (field_id, group_number, entry_year)
 );
 
